@@ -1,0 +1,50 @@
+
+/*font*/
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/*variables*/
+:root {
+    --primary: #000046;
+    --primary-light: #4d4dc1;
+    --primary-dark: #00002d;
+
+    --muted: #c0c0c4;
+    --muted-light: #dedee0;
+    --muted-dark: #717174;
+
+}
+
+/*navbar*/
+.navbar ul{
+    list-style-type: none;
+    background-color: var(--primary);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    font-size: 32px;
+    font-family: "Open Sans", sans-serif;
+    display: block;
+}
+
+.navbar a:hover{
+    background-color: none;
+    color: var(--primary-light);
+}
+
+.navbar li{
+    float: left;
+}
