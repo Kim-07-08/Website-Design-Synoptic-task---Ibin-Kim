@@ -1,0 +1,11 @@
+
+
+.menubar {
+    background-color: #000046;
+}
+
+.menubar ul {
+    list-style-type: none;
+    display: flex;
+    font-family: Open Sans, sans-serif;
+}
