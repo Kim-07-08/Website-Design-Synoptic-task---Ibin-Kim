@@ -19,9 +19,31 @@
     --muted-light: #dedee0;
     --muted-dark: #717174;
 
+    --font-normal: "Open Sans", sans-serif;
+    --font-heading: 'Open Sans', serif;
+
+    --space-0: 0; 
+    --space-1: 0.5rem; 
+    --space-2: 1rem; 
+    --space-3: 2rem; 
+}
+
+/*body*/
+body {
+    margin: 0;
 }
 
 /*navbar*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary);
+    color: white;
+    padding: var(--space-1) var(--space-2);
+}
+
 .navbar ul{
     list-style-type: none;
     background-color: var(--primary);
