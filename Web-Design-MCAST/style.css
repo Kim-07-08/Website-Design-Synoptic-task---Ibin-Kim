@@ -19,19 +19,78 @@
     --muted-light: #dedee0;
     --muted-dark: #717174;
 
-    --font-normal: "Open Sans", sans-serif;
-    --font-heading: 'Open Sans', serif;
+    --font-normal: "Open Sans", sans-serif, 15px;
+    --font-heading: 'Open Sans', sans-serif, 32px;
 
     --space-0: 0; 
     --space-1: 0.5rem; 
     --space-2: 1rem; 
     --space-3: 2rem; 
+
+    --shadow-dark: 0 0.1rem 0.2rem 0.1rem rgba(54, 48, 41, 0.2);
+    --shadow-light: 0 0.1rem 0.2rem 0.1rem rgba(255, 255, 255, 0.5);
 }
 
 /*body*/
 body {
     margin: 0;
+    font-family: var(--font-normal);
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    margin-bottom: 1rem;
+}
+
+/*colours*/
+.bg-primary { background-color: var(--primary); }
+.bg-light { background-color: var(--light); }
+.bg-dark { background-color: var(--dark); }
+.bg-muted { background-color: var(--muted); }
+
+.text-primary { color: var(--primary) }
+.text-light { color: var(--light); }
+.text-dark { color: var(--dark); }
+.text-muted { color: var(--muted); }
+
+.shadow-dark { box-shadow: var(--shadow-dark); }
+.shadow-light { box-shadow: var(--shadow-light); }
+
+/*layout*/
+.container {
+    max-width: 1920px;
+    margin: var(--space-0);
+}
+
+/*components*/
+.homepage-img {
+    margin: var(--space-0);
+    padding: var(--space-0);
+    width: 100%;
+}
+
+.homepage-img img {;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/*layout*/
+.m-0 { margin: var(--space-0); }
+.m-1 { margin: var(--space-1); }
+.m-2 { margin: var(--space-2); }
+.m-3 { margin: var(--space-3); }
+
+.p-0 { padding: var(--space-0); }
+.p-1 { padding: var(--space-1); }
+.p-2 { padding: var(--space-2); }
+.p-3 { padding: var(--space-3); }
+
+.gap-0 { gap: var(--space-0); }
+.gap-1 { gap: var(--space-1); }
+.gap-2 { gap: var(--space-2); }
+.gap-3 { gap: var(--space-3); }
 
 /*navbar*/
 
@@ -47,18 +106,18 @@ body {
 .navbar ul{
     list-style-type: none;
     background-color: var(--primary);
-    padding: 0px;
-    margin: 0px;
+    padding: var(--space-0);
+    margin: var(--space-0);
     overflow: hidden;
 }
 
 .navbar a{
     color: white;
     text-decoration: none;
-    padding: 15px;
+    padding: var(--space-2);
     text-align: center;
     font-size: 32px;
-    font-family: "Open Sans", sans-serif;
+    font-family: var(--font-normal);
     display: block;
 }
 
