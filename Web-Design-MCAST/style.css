@@ -28,8 +28,8 @@
     --space-3: 2rem; 
     --space-4: 5rem;
 
-    --shadow-dark: 0 0.1rem 0.2rem 0.1rem rgba(54, 48, 41, 0.2);
-    --shadow-light: 0 0.1rem 0.2rem 0.1rem rgba(255, 255, 255, 0.5);
+    --shadow-dark: 0 0.1rem 0.2rem 0.1rem rgba(49, 45, 41, 0.2);
+    --shadow-light: 0 0.1rem 0.2rem 0.1rem rgba(242, 242, 242, 0.5);
 }
 
 /*body*/
@@ -88,16 +88,39 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
 }
 
-explore-img {
-
+/*flexbox*/
+.AboutUs {
+    width: 1030px;
+    margin: var(--space-4) auto var(--space-3);
+    text-align: left;
 }
 
-/*flexbox*/
 .flex {
     display: flex;
-    background-color: none;
-    margin: var(--space-2);
-    gap: var(--space-3);
+    align-items: center;
+    justify-content: space-between;
+    width: 1030px;
+    margin: var(--space-0) auto;
+    padding: var(--space-0);
+    gap: 80px;
+}
+
+.flex p {
+    flex: 0 0 450px;
+    width: 450px;
+    margin: var(--space-0);
+    padding: var(--space-0);
+    font-size: var(--font-normal);
+    line-height: 2;
+    text-align: left;
+}
+
+.flex img {
+    flex: 0 0 500px;
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+    display: block;
 }
 
 /*layout*/
