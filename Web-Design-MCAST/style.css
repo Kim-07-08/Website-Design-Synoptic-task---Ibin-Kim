@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 /*About us*/
 .AboutUs {
     width: 90%;
-    max-width: 1030px;
+    max-width: 1200px;
     text-align: left;
     margin: var(--space-4) auto var(--space-3);
     box-sizing: border-box;
@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
 .flex {
     display: flex;
     width: 90%;
-    max-width: 1030px;
+    max-width: 1200px;
     gap: clamp(var(--space-2), 5vw, var(--space-4));
     align-items: center;
     margin: var(--space-0) auto;
