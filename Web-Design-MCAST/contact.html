@@ -25,12 +25,25 @@
         </ul>
     </nav>
 
-    <h1>Contact Us</h1>
-    <p>email</p>
-    <p>questions</p>
-    <p>send</p>
+    <h1 class="Headtitlemiddle">Contact Us</h1>
+    
+    <form action="mailto:info@MCAST.com" method="post" enctype="text/plain" class="contact-form">
+        <div>
+            <label for="imput-email">Email :</label>
+            <input type="email" name="email" id="input-email" placeholder="me@example.com" required>
+        </div>
 
-    </main>
+        <div>
+            <label for="input-message">Question :</label>
+            <textarea name="message" id="input-message"
+            placeholder="Type your question here" cols="30" rows="10" required minlength="20"></textarea>
+        </div>
+
+        <div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        
+    </form>
 
 </body>
 </html>
